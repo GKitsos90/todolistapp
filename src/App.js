@@ -89,58 +89,58 @@ function App() {
       </div>
       <div className="list-container">
         <ul className="todo-list">
-          {notes.length === 0 ? (
-            <li className="todo-item empty-list">
-              <div className="empty-message">
-                <img src={isDarkMode ? "/detective_dark.png" : "/detective.png"} alt="Detective" className="task-image" />
-                <p className="initial-message">Empty...</p>
-              </div>
-            </li>
-          ) : (
-            notes.map(note => (
-              <li key={note.id} className={`todo-item ${note.completed ? 'completed' : ''} show-line`}>
-                <span className="field1">
-                  <label className="custom-checkbox">
-                    <input 
-                      type="checkbox" 
-                      checked={note.completed}
-                      onChange={() => toggleNoteCompletion(note.id)}
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                </span>
-                {editingNoteId === note.id ? (
-                  <input
-                    type="text"
-                    value={editNoteText}
-                    onChange={(e) => setEditNoteText(e.target.value)}
-                    onBlur={() => saveEditedNote(note.id, editNoteText)}
-                    autoFocus
-                  />
-                ) : (
-                  <p>{note.text}</p>
-                )}
-                <span className="field2">
-                  {editingNoteId !== note.id && (
-                    <>
-                      <img 
-                        src="/edit.png" 
-                        alt="Edit Icon" 
-                        className="edit-icon"
-                        onClick={() => startEditingNote(note.id, note.text)}
-                      />
-                      <img 
-                        src="/delete.png" 
-                        alt="Delete Icon" 
-                        className="delete-icon"
-                        onClick={() => deleteNote(note.id)}
-                      />
-                    </>
-                  )}
-                </span>
-              </li>
-            ))
-          )}
+        {notes.length === 0 ? (
+  <li className="todo-item empty-list">
+    <div className="empty-message">
+      <img src={isDarkMode ? "/detective_dark.png" : "/detective.png"} alt="Detective" className="task-image" />
+      <p className="initial-message">Empty...</p>
+    </div>
+  </li>
+) : (
+  notes.map((note, index) => (
+    <li key={note.id} className={`todo-item ${note.completed ? 'completed' : ''} ${index < notes.length - 1 ? 'show-line' : ''}`}>
+      <span className="field1">
+        <label className="custom-checkbox">
+          <input 
+            type="checkbox" 
+            checked={note.completed}
+            onChange={() => toggleNoteCompletion(note.id)}
+          />
+          <span className="checkmark"></span>
+        </label>
+      </span>
+      {editingNoteId === note.id ? (
+        <input
+          type="text"
+          value={editNoteText}
+          onChange={(e) => setEditNoteText(e.target.value)}
+          onBlur={() => saveEditedNote(note.id, editNoteText)}
+          autoFocus
+        />
+      ) : (
+        <p>{note.text}</p>
+      )}
+      <span className="field2">
+        {editingNoteId !== note.id && (
+          <>
+            <img 
+              src="/edit.png" 
+              alt="Edit Icon" 
+              className="edit-icon"
+              onClick={() => startEditingNote(note.id, note.text)}
+            />
+            <img 
+              src="/delete.png" 
+              alt="Delete Icon" 
+              className="delete-icon"
+              onClick={() => deleteNote(note.id)}
+            />
+          </>
+        )}
+      </span>
+    </li>
+  ))
+)}
         </ul>
       </div>
       {showModal && (
