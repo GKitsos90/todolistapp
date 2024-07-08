@@ -1,0 +1,112 @@
+/* Στυλ για το header */
+header {
+    font-family: 'Kanit', sans-serif; /* Ορισμός της γραμματοσειράς σε Kanit, με εναλλακτική sans-serif */
+    text-align: center; /* Κεντράρισμα του κειμένου */
+    font-size: 12px; /* Μέγεθος γραμματοσειράς 12px */
+    padding-top: 10px; /* Εσωτερικό περιθώριο πάνω 10px */
+    color: black; /* Χρώμα κειμένου μαύρο */
+}
+
+/* Στυλ για το search header */
+.search-header {
+    display: flex; /* Χρήση flexbox για τη διάταξη */
+    align-items: center; /* Κεντράρισμα των στοιχείων κάθετα */
+    justify-content: center; /* Κεντράρισμα των στοιχείων οριζόντια */
+    padding: 10px; /* Εσωτερικό περιθώριο 10px */
+    font-size: 18px; /* Μέγεθος γραμματοσειράς 18px */
+}
+
+/* Στυλ για το container του search box */
+.search-box-container {
+    flex: 1; /* Το container θα επεκτείνεται ώστε να καταλάβει όλο το διαθέσιμο χώρο */
+    display: flex; /* Χρήση flexbox για τη διάταξη */
+    justify-content: center; /* Κεντράρισμα των στοιχείων οριζόντια */
+    padding: 0 20px; /* Εσωτερικό περιθώριο 0 πάνω-κάτω, 20px αριστερά-δεξιά */
+}
+
+/* Στυλ για το container των search actions */
+.search-actions-container {
+    display: flex; /* Χρήση flexbox για τη διάταξη */
+    align-items: center; /* Κεντράρισμα των στοιχείων κάθετα */
+    margin-left: -300px; /* Μετακίνηση του container 300px αριστερά */
+}
+
+/* Στυλ για το placeholder του search box */
+.search-box::placeholder {
+    color: #6C63FF; /* Χρώμα placeholder #6C63FF (μωβ) */
+}
+
+/* Στυλ για το search box */
+.search-box {
+    padding: 8px 16px; /* Εσωτερικό περιθώριο 8px πάνω-κάτω, 16px αριστερά-δεξιά */
+    font-size: 14px; /* Μέγεθος γραμματοσειράς 14px */
+    width: 50%; /* Πλάτος 50% του container */
+    border: 1px solid #6C63FF; /* Περιθώριο 1px με χρώμα #6C63FF */
+    border-radius: 4px; /* Στρογγυλοποίηση γωνιών 4px */
+    background-image: url('Vector.png'); /* Εικόνα φόντου */
+    background-repeat: no-repeat; /* Μη επανάληψη της εικόνας */
+    background-position: right 10px center; /* Τοποθέτηση της εικόνας δεξιά 10px και κέντρο κατακόρυφα */
+    background-size: 20px 20px; /* Μέγεθος της εικόνας 20px x 20px */
+}
+
+/* Στυλ για το search select dropdown */
+.search-select {
+    width: 85px; /* Πλάτος 85px */
+    height: 36px; /* Ύψος 36px */
+    border-radius: 5px; /* Στρογγυλοποίηση γωνιών 5px */
+    padding: 10px; /* Εσωτερικό περιθώριο 10px */
+    border: 1px solid #6C63FF; /* Περιθώριο 1px με χρώμα #6C63FF */
+    background-color: #6C63FF; /* Χρώμα φόντου #6C63FF */
+    color: white; /* Χρώμα κειμένου λευκό */
+    margin-right: 10px; /* Εξωτερικό περιθώριο δεξιά 10px */
+}
+
+/* Στυλ για το custom button */
+.custom-button {
+    width: 38px; /* Πλάτος 38px */
+    height: 38px; /* Ύψος 38px */
+    border-radius: 5px; /* Στρογγυλοποίηση γωνιών 5px */
+    padding: 0; /* Μηδενικό εσωτερικό περιθώριο */
+    background: url('halfmoon.png') no-repeat center center; /* Εικόνα φόντου με μη επανάληψη, τοποθετημένη στο κέντρο */
+    background-color: #6C63FF; /* Χρώμα φόντου #6C63FF */
+    border: none; /* Χωρίς περίγραμμα */
+    cursor: pointer; /* Αλλαγή δείκτη ποντικιού σε pointer */
+    margin-right: 90px; /* Εξωτερικό περιθώριο δεξιά 90px */
+}
+
+/* Στυλ για το container της λίστας */
+.list-container {
+    display: flex; /* Χρήση flexbox για τη διάταξη */
+    justify-content: center; /* Κεντράρισμα των στοιχείων οριζόντια */
+}
+
+/* Στυλ για τη λίστα to-do */
+.todo-list {
+    list-style-type: none; /* Αφαίρεση bullets από τη λίστα */
+    padding: 0; /* Μηδενικό εσωτερικό περιθώριο */
+    margin-top: 20px; /* Εξωτερικό περιθώριο πάνω 20px */
+}
+
+/* Στυλ για τα πεδία της λίστας */
+.field1, .field2 {
+    display: flex; /* Χρήση flexbox για τη διάταξη */
+    justify-content: center; /* Κεντράρισμα των στοιχείων οριζόντια */
+}
+
+/* Στυλ για το additional button */
+.additional-button {
+    width: 50px; /* Πλάτος 50px */
+    height: 50px; /* Ύψος 50px */
+    border-radius: 50%; /* Στρογγυλοποίηση γωνιών για να γίνει κυκλικό */
+    background: url('cross.png') no-repeat center center; /* Εικόνα φόντου με μη επανάληψη, τοποθετημένη στο κέντρο */
+    background-color: #6C63FF; /* Χρώμα φόντου #6C63FF */
+    background-size: 24px 24px; /* Μέγεθος εικόνας 24px x 24px */
+    border: none; /* Χωρίς περίγραμμα */
+    cursor: pointer; /* Αλλαγή δείκτη ποντικιού σε pointer */
+    position: fixed; /* Σταθερή θέση στην οθόνη */
+    bottom: 20px; /* Απόσταση 20px από το κάτω μέρος της οθόνης */
+    right: 110px; /* Απόσταση 110px από τη δεξιά πλευρά της οθόνης */
+}
+.field2 {
+    font-family: 'Kanit', sans-serif; ;
+}

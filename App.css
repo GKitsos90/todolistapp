@@ -1,0 +1,102 @@
+/* Στυλ για το header */
+header {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    color: black;
+}
+
+.search-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.search-box-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.search-actions-container {
+    display: flex;
+    align-items: center;
+    margin-left: -300px;
+}
+
+.search-box::placeholder {
+    color: #6C63FF;
+}
+
+.search-box {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 50%;
+    border: 1px solid #6C63FF;
+    border-radius: 4px;
+    background-image: url('Vector.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px 20px;
+}
+
+.search-select {
+    width: 85px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #6C63FF;
+    background-color: #6C63FF;
+    color: white;
+    margin-right: 10px;
+}
+
+.custom-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    padding: 0;
+    background: url('halfmoon.png') no-repeat center center;
+    background-color: #6C63FF;
+    border: none;
+    cursor: pointer;
+    margin-right: 90px;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.field1, .field2 {
+    display: flex;
+    justify-content: center;
+}
+
+.additional-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('cross.png') no-repeat center center;
+    background-color: #6C63FF;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 110px;
+}
+
+.field2 {
+    font-family: 'Kanit', sans-serif;
+}
