@@ -262,19 +262,17 @@ header {
 }
 
 .todo-item::after {
-  display: none;
+  position: relative;
 }
 
-.todo-item.show-line::after {
-  content: '';
+.todo-item.show-line:not(.empty-list)::after {
+  content: "";
   position: absolute;
-  bottom: -10px;
-  left: 67%; 
-  transform: translateX(-50%); 
-  width: 62%; 
-  height: 1px;
-  background-color: #6C63FF;
-  display: block;
+  bottom: 0px;
+  left: 300px;
+  right: 10px;
+  height: 2px;
+  background-color: #6C63FF; 
 }
 
 .dark-mode {
