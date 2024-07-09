@@ -268,8 +268,8 @@ header {
 .todo-item.show-line:not(.empty-list)::after {
   content: "";
   position: absolute;
-  bottom: -10px;
-  left: 300px;
+  bottom: 0px;
+  left: 170px;
   right: 10px;
   height: 1px;
   background-color: #6C63FF; 
@@ -334,7 +334,7 @@ header {
   background-color: #333;
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 1920px) {
   .search-box {
     width: 550px;
   }
@@ -365,29 +365,91 @@ header {
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (max-width: 1920px) {
   .search-box {
-    width: 80%;
+    width: 550px;
   }
   .todo-item {
     margin-left: -20px;
   }
 
   .search-actions-container {
-    margin-left: -10px;
-    margin-right: -200px;
+    margin-left: -270px;
+    margin-right: -10px;
   }
-  
+
   .additional-button {
-    margin-right: -190px;
+    margin-right: 0px;
+  }
+
+  .list-container{
+    margin-left: -20px;
   }
 
   .field1{
-    margin-left: -180px;
+    margin-left: -200px;
+  }
+
+  .todo-item.show-line::after {
+    margin-left: -65px;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .search-box {
+    width: 550px;
+  }
+  .todo-item {
+    margin-left: -20px;
+  }
+
+  .search-actions-container {
+    margin-left: -470px;
+    margin-right: 190px;
+  }
+
+  .additional-button {
+    margin-right: 200px;
+  }
+
+  .list-container{
+    margin-left: -20px;
+  }
+
+  .field1{
+    margin-left: -200px;
+  }
+
+  .todo-item.show-line::after {
+    margin-left: -65px;
+    width: 80%;
+  } 
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .search-box {
+    width: 80%;
+  }
+  .todo-item {
+    margin-left: 10px;
+  }
+
+  .search-actions-container {
+    margin-left: -10px;
+    margin-right: -300px;
+  }
+  
+  .additional-button {
+    margin-right: -290px;
+  }
+
+  .field1{
+    margin-left: -150px;
   }
   
   .todo-item.show-line::after {
-    margin-left: -50px;
-    width: 80%;
+    margin-left: -20px;
+    width:75%;
   }
 }
