@@ -251,6 +251,14 @@ header {
     transition: filter 0.3s ease;
     margin-top: 10px; 
   }
+
+  .delete-icon:hover {
+    content: url('delete_red.png');
+  }
+
+  .edit-icon:hover {
+    content: url('edit_purple.png');
+  }
   
   .todo-item .field2 img:hover {
     filter: brightness(0.8);
