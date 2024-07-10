@@ -81,6 +81,7 @@ function App() {
         <div className="search-actions-container">
           <select className="search-select">
             <option value="option1">ALL</option>
+            <option value="option1">All</option>
             <option value="option2">Complete</option>
             <option value="option3">Incomplete</option>
           </select>
