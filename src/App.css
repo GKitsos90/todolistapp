@@ -8,9 +8,9 @@ header {
 }
 
 .search-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Implements flexbox to align contents */
+    align-items: center; /* Vertically centers the elements */
+    justify-content: center; /* Horizontally centers the elements */
     padding: 10px;
     font-size: 18px;
 }
@@ -35,12 +35,12 @@ header {
 .search-box {
     padding: 8px 16px;
     font-size: 16px;
-    width: 550px;
-    border: 1px solid #6C63FF;
-    border-radius: 4px;
-    background-image: url('Vector.png');
+    width: 550px; /* Sets fixed width for search box */
+    border: 1px solid #6C63FF; /* Sets fixed width for search box */
+    border-radius: 4px; /* Sets fixed width for search box */
+    background-image: url('Vector.png'); /* Adds a background image to the frame */
     background-repeat: no-repeat;
-    background-position: right 10px center;
+    background-position: right 10px center; /* Place the image inside the frame */
     background-size: 20px 20px;
     margin-left: 150px;
 }
@@ -65,7 +65,7 @@ header {
     padding: 0;
     background: url('halfmoon.png') no-repeat center center;
     background-color: #6C63FF;
-    border: none;
+    border: none; /* Removes the border of the button */
     cursor: pointer;
     margin-right:340px;
     margin-left: 10px;
@@ -73,7 +73,7 @@ header {
 
 .list-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Horizontally centers the elements */
 }
 
 .todo-list {
@@ -106,14 +106,14 @@ header {
 }
 
 .modal {
-    position: fixed;
+    position: fixed; /* Places the modal in a fixed position */
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centers the modal in the window */
     background-color: white;
     padding: 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+    z-index: 1000; /* Ensures the modal is in front of other elements */
     border-radius: 8px;
     width: 350px;
   }
@@ -275,18 +275,13 @@ header {
 }
 
 .todo-item.show-line:not(.empty-list)::after {
-  content: "";
-  position: absolute;
+  content: ""; /* Creates a pseudo item after the todo item */
+  position: absolute; /* Sets pseudo element to absolute position */
   bottom: 0px;
   left: 170px;
   right: 10px;
   height: 1px;
   background-color: #6C63FF; 
-}
-
-.dark-mode {
-  background-color: #333;
-  color: #fff;
 }
 
 .dark-mode header {
@@ -306,8 +301,8 @@ header {
 .dark-mode .search-box {
   background-color: #555;
   color: #fff;
-  border-color: #777;
-  background-image: url('Vector_dark.png');
+  border-color: #777; /* Change border color in dark mode */
+  background-image: url('Vector_dark.png'); /* Changes image to dark mode */
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 20px 20px;
@@ -332,7 +327,7 @@ header {
 }
 
 .dark-mode .custom-button {
-  background: url('sun.png') no-repeat center center;
+  background: url('sun.png') no-repeat center center; /* Changes button image to sun in dark mode */
   background-color: #6C63FF;
   border: none;
   color: inherit; 
@@ -359,6 +354,7 @@ header {
   z-index: 1; 
 }
 
+/*It applies these styles for screens up to 1920px wide.*/
 @media (max-width: 1920px) {
   .search-box {
     width: 550px;
@@ -431,6 +427,7 @@ header {
     margin-left: -65px;
     width: 80%;
   }
+
   .dark-mode .todo-item.show-line:not(.empty-list)::after {
     content: "";
     position: absolute;
