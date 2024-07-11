@@ -21,7 +21,7 @@ This is a simple to-do list application built with React that allows users to ma
 
 4.Start the development server: npm run dev
 
-5.Start the JSON server: npx json-server --watch database/db.json --port 8000 (--port 8000 is optional)
+5.Start the JSON server: npx json-server http://localhost:3000
 
 ### Acknowledgments
 * React-modal for handling modal dialogs.
